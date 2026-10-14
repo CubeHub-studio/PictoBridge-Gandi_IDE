@@ -65,3 +65,12 @@ Timestamp is optional Unix time in milliseconds. People count is optional. The c
 ## Privacy and safety
 
 PictoBridge has no hosted relay, telemetry, or credential collection. Keep any future bridge bound to localhost by default, validate incoming payloads, and do not accept arbitrary network clients without authentication.
+
+## Test without a DS bridge
+
+A simulator is included in bridge/mock-bridge.js. With Node.js 18+ installed, run:
+
+    npm install
+    npm run mock-bridge
+
+It listens only on 127.0.0.1:8765 and echoes simulated messages to connected clients on the same channel. This is useful for checking the extension's WebSocket and block behavior, but it does not connect to a DS or transmit radio packets. See bridge/README.md for details.
