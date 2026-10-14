@@ -1,0 +1,13 @@
+{
+  "name": "pictobridge-gandi-ide",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Gandi IDE client and local WebSocket test bridge for PictoBridge",
+  "scripts": {
+    "mock-bridge": "node bridge/mock-bridge.js",
+    "check": "node --check extension.js && node --check bridge/mock-bridge.js"
+  },
+  "devDependencies": {
+    "ws": "^8.18.3"
+  }
+}
