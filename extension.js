@@ -30,7 +30,7 @@
           { opcode: "setBridgeUrl", blockType: "command", text: "set bridge URL to [URL]",
             arguments: { URL: { type: "string", defaultValue: DEFAULT_BRIDGE_URL } } },
           { opcode: "listen", blockType: "command", text: "start listening to channel [CHANNEL]",
-            arguments: { CHANNEL: { type: "string", menu: "channels", defaultValue: "A" } } },
+            arguments: { CHANNEL: { type: "menu", menu: "channels", defaultValue: "A" } } },
           { opcode: "stopListening", blockType: "command", text: "stop listening" },
           { opcode: "sendMessage", blockType: "command", text: "send [MESSAGE] as username [USERNAME]",
             arguments: {
